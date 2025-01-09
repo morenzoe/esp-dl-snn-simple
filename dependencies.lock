@@ -1,0 +1,33 @@
+dependencies:
+  espressif/esp-dl:
+    dependencies:
+    - name: idf
+      version: '>=5.3'
+    - name: espressif/esp_jpeg
+      version: ^1.0.5~3
+    source:
+      path: D:\moren\SNN\06_01_2025\esp-dl-master\esp-dl
+      type: local
+    targets:
+    - esp32s3
+    - esp32p4
+    version: 3.0.0
+  espressif/esp_jpeg:
+    component_hash: ca1494551d0436b0dbba379c578da2c0d1b8d8756240e5e99f172744dad8e842
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.2.0
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+direct_dependencies:
+- espressif/esp-dl
+manifest_hash: 79dab71a16af994ae2c920a3f298d8fad3741184896c92f435a32f36eea7ca7d
+target: esp32s3
+version: 2.0.0
